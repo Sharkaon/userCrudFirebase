@@ -1,0 +1,28 @@
+<?php $_SESSION["logado"]=true; ?>
+<h1>Logado</h1>
+<table class="table">
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td id="name">Bem vindo</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="email">Email: </td>
+        <td>
+            <a href="<?= HOME_URL?>/User/formEditEmailAction"><button class="btn btn-primary edit" id="editEmail">Mudar</button></a>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<button class="btn btn-primary edit" id="alterarSenha">Mudar Senha</button>
+<button class="btn btn-primary edit" id="logout">Sair</button>
+<button class="btn btn-danger edit" id="delete">Deletar conta</button>
+<script src='<?= HOME_URL?>/scripts/logout.js'></script>
+<script src='<?= HOME_URL?>/scripts/editPassword.js'></script>
+<script src='<?= HOME_URL?>/scripts/deleteUser.js'></script>

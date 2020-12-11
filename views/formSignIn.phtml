@@ -1,0 +1,16 @@
+<form>
+    <div class="form-group">
+        <label for="inputEmail">E-mail</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Senha</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+</form>
+<button class="btn btn-primary" id="submit">Criar</button>
+
+<p class="redirect"><a href='<?= HOME_URL?>/User/formLoginAction'>Já tem uma conta? Entre clicando aqui!</a></p>
+
+<script src="<?= HOME_URL ?>/scripts/signIn.js"></script>
+<script src="<?= HOME_URL ?>/scripts/userManager.js"></script>
